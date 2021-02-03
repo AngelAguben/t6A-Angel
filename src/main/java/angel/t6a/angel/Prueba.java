@@ -25,7 +25,6 @@ public class Prueba {
 
         // MotorCoche
         // A este mc1 le he tenido que poner un nombre para poder hacer le 
-        
         // CONVERSIÓPN IMPLICITA
         // En una lista de motor meto cosas que no son de motor
         MotorCoche mc1 = new MotorCoche(1900);
