@@ -24,8 +24,13 @@ public class Prueba {
         almacenMotores.add(new Motor(3, "Diésel"));
 
         // MotorCoche
+        // A este mc1 le he tenido que poner un nombre para poder hacer le 
+        
+        // CONVERSIÓPN IMPLICITA
+        // En una lista de motor meto cosas que no son de motor
+        MotorCoche mc1 = new MotorCoche(1900);
         almacenMotores.add(new MotorCoche(1400));
-        almacenMotores.add(new MotorCoche(1900));
+        almacenMotores.add(mc1);
 
         // Berlina
         almacenMotores.add(new Berlina("BMW", 3));
@@ -41,7 +46,8 @@ public class Prueba {
         for (Motor aux : almacenMotores) {
 
             // Conversiones explícitas
-            // Entrará sólo con los MotoresCoche
+            // Le digo el tipo de objeto que tiene que ser
+            // Entrará sólo con los MotoresCoche 
             if (aux instanceof MotorCoche) {
                 System.out.println("---Cambio de aceite---");
                 ((MotorCoche) aux).cambiarAceite();
@@ -63,5 +69,20 @@ public class Prueba {
             System.out.println(aux);
             aux.arrancar();
         }
+
+        // Usa los métodos indexof(Object o), contains(Object o) y 
+        // remove(Object o) de la clase ArrayList, sobre la lista de objetos 
+        // que ya tienes, para buscar un objeto en la lista, saber si existe un
+        // objeto en la lista y borrar un objeto de la lista, respectivamente. 
+        // Si funcionan correctamente significa que el método equals está 
+        // correctamente implementado
+        System.out.println("Posición de mc1: " + almacenMotores.indexOf(mc1));
+        System.out.println("¿Existe mc1? " + almacenMotores.contains(mc1));
+        System.out.println("Antes de borrar el elemento mc1");
+        almacenMotores.forEach(System.out::println);
+        System.out.println("Despues de borrar el elemento mc1");
+        almacenMotores.remove(mc1);
+        almacenMotores.forEach(System.out::println);
+        System.out.println("¿Existe mc1? " + almacenMotores.contains(mc1));
     }
 }
