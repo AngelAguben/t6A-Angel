@@ -11,7 +11,7 @@ import java.util.Objects;
  *
  * @author Ángel
  */
-public class Berlina extends MotorCoche {
+public final class Berlina extends MotorCoche {
 
     private String marca;
     private int puertas;

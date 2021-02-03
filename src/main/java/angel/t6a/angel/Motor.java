@@ -9,7 +9,7 @@ package angel.t6a.angel;
  *
  * @author Ángel
  */
-public class Motor {
+public abstract class Motor {
 
     private int cilindros; // Cilindros del motor
     private int combus; // Combustible del motor
