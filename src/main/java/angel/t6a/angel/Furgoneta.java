@@ -78,5 +78,10 @@ public final class Furgoneta extends MotorCoche { // Clase D
     public void arrancar() { // metodoA
         System.out.println("Arrancando motor de la furgoneta...");
     }
+    
+    // Crea un método “metodoD” que sólo exista en la clase D.(meterCajaAguacates)
+    public void meterCajaAguacates(){
+        System.out.println("Metiendo la caja de aguacates...");
+    }
 
 }
