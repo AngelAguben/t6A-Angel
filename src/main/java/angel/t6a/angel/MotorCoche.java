@@ -11,44 +11,40 @@ package angel.t6a.angel;
  */
 public class MotorCoche extends Motor { // Clase B
 
-    private int cc; // Centímetros cúbicos
+    private int cenCub; // Centímetros cúbicos
 
     public MotorCoche() {
     }
 
-    public MotorCoche(int cc) {
+    public MotorCoche(int cenCub) {
         super();
-        this.cc = cc;
+        this.cenCub = cenCub;
     }
 
-    public int getCc() {
-        return cc;
+    public int getcenCub() {
+        return cenCub;
     }
 
-    public void setCc(int cc) {
-        this.cc = cc;
+    public void setcenCub(int cenCub) {
+        this.cenCub = cenCub;
     }
 
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 59 * hash + this.cc;
+        hash = 59 * hash + this.cenCub;
         return hash;
     }
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
+        // Así se comprobaría con la clase padre
+        if (!super.equals(obj)) {
             return false;
         }
         final MotorCoche other = (MotorCoche) obj;
-        if (this.cc != other.cc) {
+        
+        if (this.cenCub != other.cenCub) {
             return false;
         }
         return true;
@@ -57,7 +53,7 @@ public class MotorCoche extends Motor { // Clase B
     // toString
     @Override
     public String toString() {
-        return super.toString() + "MotorCoche{" + "cc=" + cc + '}';
+        return super.toString() + "MotorCoche{" + "cenCub=" + cenCub + '}';
     }
 
     @Override
