@@ -9,7 +9,7 @@ package angel.t6a.angel;
  *
  * @author Ángel
  */
-public class MotorCoche extends Motor {
+public class MotorCoche extends Motor { // Clase B
 
     private int cc; // Centímetros cúbicos
 
