@@ -17,9 +17,11 @@ public class Motor { // Clase A
     private String combus; // Combustible del motor
 
     public Motor() {
+        super();
     }
 
     public Motor(int cilindros, String combus) {
+        super();
         this.cilindros = cilindros;
         this.combus = combus;
     }
@@ -40,7 +42,7 @@ public class Motor { // Clase A
         this.combus = combus;
     }
 
-    @Override
+    @Override // POLIMORFICO
     public int hashCode() {
         int hash = 7;
         hash = 23 * hash + this.cilindros;
@@ -50,7 +52,7 @@ public class Motor { // Clase A
 
     
 
-    @Override
+    @Override // POLIMORFICO
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
@@ -61,6 +63,7 @@ public class Motor { // Clase A
         if (getClass() != obj.getClass()) {
             return false;
         }
+        // CONVERSIÓN EXPLICITA
         final Motor other = (Motor) obj;
         if (this.cilindros != other.cilindros) {
             return false;
@@ -72,7 +75,7 @@ public class Motor { // Clase A
     }
 
     // toString
-    @Override
+    @Override // POLIMORFICO
     public String toString() {
         return "Motor{" + "cilindros=" + cilindros + ", combus=" + combus + '}';
     }

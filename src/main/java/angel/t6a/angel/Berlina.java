@@ -17,9 +17,11 @@ public final class Berlina extends MotorCoche { // Clase C
     private int puertas;
 
     public Berlina() {
+        super();
     }
 
     public Berlina(String marca, int puertas) {
+        super();
         this.marca = marca;
         this.puertas = puertas;
     }
@@ -40,7 +42,7 @@ public final class Berlina extends MotorCoche { // Clase C
         this.puertas = puertas;
     }
 
-    @Override
+    @Override // POLIMORFICO
     public int hashCode() {
         int hash = 5;
         hash = 37 * hash + Objects.hashCode(this.marca);
@@ -48,11 +50,12 @@ public final class Berlina extends MotorCoche { // Clase C
         return hash;
     }
 
-    @Override
+    @Override // POLIMORFICO
     public boolean equals(Object obj) {
         if (!super.equals(obj)) {
             return false;
         }
+        // CONVERSIÓN EXPLICITA
         final Berlina other = (Berlina) obj;
         if (this.puertas != other.puertas) {
             return false;
@@ -64,12 +67,12 @@ public final class Berlina extends MotorCoche { // Clase C
     }
 
     // toString
-    @Override
+    @Override // POLIMORFICO
     public String toString() {
         return super.toString() + "Berlina{" + "marca=" + marca + ", puertas=" + puertas + '}';
     }
 
-    @Override
+    @Override // POLIMORFICO
     public void arrancar() { // metodoA
         System.out.println("Arrancando motor de la berlina...");
     }
@@ -80,7 +83,7 @@ public final class Berlina extends MotorCoche { // Clase C
     }
 
     // Crea un método “metodoB2” en B que se vaya a sobrescribir en C y D. (vender)
-    @Override
+    @Override // POLIMORFICO
     public void vender() {
         System.out.println("Vendiendo berlina a presio amigo...");
     }

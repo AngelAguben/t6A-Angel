@@ -29,19 +29,20 @@ public class MotorCoche extends Motor { // Clase B
         this.cenCub = cenCub;
     }
 
-    @Override
+    @Override // POLIMORFICO
     public int hashCode() {
         int hash = 7;
         hash = 59 * hash + this.cenCub;
         return hash;
     }
 
-    @Override
+    @Override // POLIMORFICO
     public boolean equals(Object obj) {
         // Así se comprobaría con la clase padre
         if (!super.equals(obj)) {
             return false;
         }
+        // CONVERSIÓN EXPLICITA
         final MotorCoche other = (MotorCoche) obj;
         
         if (this.cenCub != other.cenCub) {
@@ -51,12 +52,12 @@ public class MotorCoche extends Motor { // Clase B
     }
 
     // toString
-    @Override
+    @Override // POLIMORFICO
     public String toString() {
         return super.toString() + "MotorCoche{" + "cenCub=" + cenCub + '}';
     }
 
-    @Override
+    @Override // POLIMORFICO
     public void arrancar() { // metodoA
         System.out.println("Arrancando motor del coche...");
     }

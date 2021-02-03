@@ -17,9 +17,11 @@ public final class Furgoneta extends MotorCoche { // Clase D
     private String modelo;
 
     public Furgoneta() {
+        super();
     }
 
     public Furgoneta(String marca, String modelo) {
+        super();
         this.marca = marca;
         this.modelo = modelo;
     }
@@ -40,7 +42,9 @@ public final class Furgoneta extends MotorCoche { // Clase D
         this.modelo = modelo;
     }
 
-    @Override
+    // EN TODOS LOS MÉTODOS QUE PONE OVERRIDE SON SOBRESCRITOS ES DECIR, SON
+    // POLOMORFICOS
+    @Override // POLIMORFICO
     public int hashCode() {
         int hash = 7;
         hash = 17 * hash + Objects.hashCode(this.marca);
@@ -48,11 +52,12 @@ public final class Furgoneta extends MotorCoche { // Clase D
         return hash;
     }
 
-    @Override
+    @Override // POLIMORFICO
     public boolean equals(Object obj) {
         if (!super.equals(obj)) {
             return false;
         }
+        // CONVERSIÓN EXPLICITA
         final Furgoneta other = (Furgoneta) obj;
         if (!Objects.equals(this.marca, other.marca)) {
             return false;
@@ -64,12 +69,13 @@ public final class Furgoneta extends MotorCoche { // Clase D
     }
 
     // toString
-    @Override
+    @Override // POLIMORFICO
     public String toString() {
         return super.toString() + "Furgoneta{" + "marca=" + marca + ", modelo=" + modelo + '}';
     }
 
-    @Override
+    // MetodoA que se sobrescribe
+    @Override // POLIMORFICO
     public void arrancar() { // metodoA
         System.out.println("Arrancando motor de la furgoneta...");
     }
@@ -80,7 +86,7 @@ public final class Furgoneta extends MotorCoche { // Clase D
     }
 
     // Crea un método “metodoB2” en B que se vaya a sobrescribir en C y D. (vender)
-    @Override
+    @Override // POLIMORFICO
     public void vender() {
         System.out.println("Vendiendo fragoneta a presio amigo...");
     }
