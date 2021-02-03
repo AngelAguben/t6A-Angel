@@ -69,9 +69,10 @@ public final class Berlina extends MotorCoche { // Clase C
         return true;
     }
 
+    // toString
     @Override
     public String toString() {
-        return "Berlina{" + "marca=" + marca + ", puertas=" + puertas + '}';
+        return super.toString() + "Berlina{" + "marca=" + marca + ", puertas=" + puertas + '}';
     }
 
     @Override

@@ -69,18 +69,19 @@ public final class Furgoneta extends MotorCoche { // Clase D
         return true;
     }
 
+    // toString
     @Override
     public String toString() {
-        return "Furgoneta{" + "marca=" + marca + ", modelo=" + modelo + '}';
+        return super.toString() + "Furgoneta{" + "marca=" + marca + ", modelo=" + modelo + '}';
     }
 
     @Override
     public void arrancar() { // metodoA
         System.out.println("Arrancando motor de la furgoneta...");
     }
-    
+
     // Crea un método “metodoD” que sólo exista en la clase D.(meterCajaAguacates)
-    public void meterCajaAguacates(){
+    public void meterCajaAguacates() {
         System.out.println("Metiendo la caja de aguacates...");
     }
 

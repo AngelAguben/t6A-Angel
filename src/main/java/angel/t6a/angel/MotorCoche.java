@@ -54,9 +54,10 @@ public class MotorCoche extends Motor { // Clase B
         return true;
     }
 
+    // toString
     @Override
     public String toString() {
-        return "MotorCoche{" + "cc=" + cc + '}';
+        return super.toString() + "MotorCoche{" + "cc=" + cc + '}';
     }
 
     @Override

@@ -67,6 +67,7 @@ public abstract class Motor { // Clase A
         return true;
     }
 
+    // toString
     @Override
     public String toString() {
         return "Motor{" + "cilindros=" + cilindros + ", combus=" + combus + '}';
