@@ -59,8 +59,14 @@ public class MotorCoche extends Motor {
         return "MotorCoche{" + "cc=" + cc + '}';
     }
 
+    @Override
     public void arrancar() { // metodoA
         System.out.println("Arrancando motor del coche...");
+    }
+
+    // MetodoB que solo exista en B(MotorCoche)
+    public void cambiarAceite() {
+        System.out.println("Cambiando aceite del motor del coche...(Sale negro)");
     }
 
 }
