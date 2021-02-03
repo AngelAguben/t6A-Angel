@@ -11,7 +11,7 @@ import java.util.Objects;
  *
  * @author Ángel
  */
-public abstract class Motor { // Clase A
+public class Motor { // Clase A
 
     private int cilindros; // Cilindros del motor
     private String combus; // Combustible del motor
