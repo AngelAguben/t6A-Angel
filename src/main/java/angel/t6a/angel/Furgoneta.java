@@ -81,7 +81,7 @@ public final class Furgoneta extends MotorCoche { // Clase D
 
     // Crea un método “metodoB2” en B que se vaya a sobrescribir en C y D. (vender)
     @Override
-    public void vender(){
+    public void vender() {
         System.out.println("Vendiendo fragoneta a presio amigo...");
     }
 }

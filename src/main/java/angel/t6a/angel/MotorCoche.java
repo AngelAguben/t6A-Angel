@@ -67,7 +67,7 @@ public class MotorCoche extends Motor { // Clase B
     }
     
     // Crea un método “metodoB2” en B que se vaya a sobrescribir en C y D. (vender)
-    public void vender(){
+    public void vender() {
         System.out.println("Vendiendo motor a presio amigo...");
     }
 
