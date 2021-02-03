@@ -5,6 +5,8 @@
  */
 package angel.t6a.angel;
 
+import java.util.Objects;
+
 /**
  *
  * @author Ángel
@@ -12,12 +14,12 @@ package angel.t6a.angel;
 public abstract class Motor { // Clase A
 
     private int cilindros; // Cilindros del motor
-    private int combus; // Combustible del motor
+    private String combus; // Combustible del motor
 
     public Motor() {
     }
 
-    public Motor(int cilindros, int combus) {
+    public Motor(int cilindros, String combus) {
         this.cilindros = cilindros;
         this.combus = combus;
     }
@@ -30,21 +32,23 @@ public abstract class Motor { // Clase A
         this.cilindros = cilindros;
     }
 
-    public int getCombus() {
+    public String getCombus() {
         return combus;
     }
 
-    public void setCombus(int combus) {
+    public void setCombus(String combus) {
         this.combus = combus;
     }
 
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 59 * hash + this.cilindros;
-        hash = 59 * hash + this.combus;
+        hash = 23 * hash + this.cilindros;
+        hash = 23 * hash + Objects.hashCode(this.combus);
         return hash;
     }
+
+    
 
     @Override
     public boolean equals(Object obj) {
