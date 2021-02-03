@@ -59,4 +59,8 @@ public class MotorCoche extends Motor {
         return "MotorCoche{" + "cc=" + cc + '}';
     }
 
+    public void arrancar() { // metodoA
+        System.out.println("Arrancando motor del coche...");
+    }
+
 }

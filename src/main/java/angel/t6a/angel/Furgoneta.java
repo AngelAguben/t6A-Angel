@@ -74,4 +74,8 @@ public class Furgoneta extends MotorCoche {
         return "Furgoneta{" + "marca=" + marca + ", modelo=" + modelo + '}';
     }
 
+    public void arrancar() { // metodoA
+        System.out.println("Arrancando motor de la furgoneta...");
+    }
+
 }

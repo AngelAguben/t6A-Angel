@@ -73,5 +73,9 @@ public class Berlina extends MotorCoche {
     public String toString() {
         return "Berlina{" + "marca=" + marca + ", puertas=" + puertas + '}';
     }
+    
+    public void arrancar() { // metodoA
+        System.out.println("Arrancando motor de la berlina...");
+    }
 
 }
