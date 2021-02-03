@@ -50,8 +50,6 @@ public class Motor { // Clase A
         return hash;
     }
 
-    
-
     @Override // POLIMORFICO
     public boolean equals(Object obj) {
         if (this == obj) {
