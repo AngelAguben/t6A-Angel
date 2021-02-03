@@ -50,13 +50,7 @@ public final class Berlina extends MotorCoche { // Clase C
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
+        if (!super.equals(obj)) {
             return false;
         }
         final Berlina other = (Berlina) obj;
