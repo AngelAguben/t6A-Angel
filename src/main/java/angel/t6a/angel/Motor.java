@@ -72,4 +72,9 @@ public class Motor {
         return "Motor{" + "cilindros=" + cilindros + ", combus=" + combus + '}';
     }
 
+    // Método que sobrescribiremos en las clases hijas
+    public void arrancar() { // metodoA
+        System.out.println("Arrancando motor...");
+    }
+
 }
