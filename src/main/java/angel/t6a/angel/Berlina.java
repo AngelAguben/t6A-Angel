@@ -79,4 +79,9 @@ public final class Berlina extends MotorCoche { // Clase C
         System.out.println("Arrancando motor de la berlina...");
     }
 
+    // Crea un método “metodoC” que sólo exista en la clase C. (ponerAleron)
+    public void ponerAleron() {
+        System.out.println("Poniendo alerón to guapo... (+15cv)");
+    }
+
 }
