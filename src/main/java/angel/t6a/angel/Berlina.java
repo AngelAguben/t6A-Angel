@@ -79,4 +79,9 @@ public final class Berlina extends MotorCoche { // Clase C
         System.out.println("Poniendo alerón to guapo... (+15cv)");
     }
 
+    // Crea un método “metodoB2” en B que se vaya a sobrescribir en C y D. (vender)
+    @Override
+    public void vender(){
+        System.out.println("Vendiendo berlina a presio amigo...");
+    }
 }
