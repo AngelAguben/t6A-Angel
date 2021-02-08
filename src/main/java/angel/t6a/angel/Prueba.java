@@ -31,13 +31,13 @@ public class Prueba {
         almacenMotores.add(new MotorCoche(1400));
         almacenMotores.add(mc1);
 
-        // Berlina
-        almacenMotores.add(new Berlina("BMW", 3));
-        almacenMotores.add(new Berlina("Audi", 5));
+        // MotorBerlina
+        almacenMotores.add(new MotorBerlina("BMW", true));
+        almacenMotores.add(new MotorBerlina("Audi", false));
 
-        // Furgoneta
-        almacenMotores.add(new Furgoneta("Volkswagen", "Caravelle"));
-        almacenMotores.add(new Furgoneta("Citroën", "Jumpy"));
+        // MotorFurgoneta
+        almacenMotores.add(new MotorFurgoneta("Volkswagen", "Caravelle"));
+        almacenMotores.add(new MotorFurgoneta("Citroën", "Jumpy"));
 
         // Recorre la lista y realiza las siguientes acciones:
         // llama a métodos propios de cada clase (“metodoB”, “metodoC” y “metodoD”).
@@ -52,15 +52,15 @@ public class Prueba {
                 ((MotorCoche) aux).cambiarAceite();
             }
             // Entrará sólo con las berlinas de la lista
-            if (aux instanceof Berlina) {
+            if (aux instanceof MotorBerlina) {
                 System.out.println("---Poner alerón---");
-                Berlina tmp = (Berlina) aux;
+                MotorBerlina tmp = (MotorBerlina) aux;
                 tmp.ponerAleron();
             }
             // Entrará sólo con las furgonetas de la lista
-            if (aux instanceof Furgoneta) {
+            if (aux instanceof MotorFurgoneta) {
                 System.out.println("---Meter caja de aguacates---");
-                Furgoneta x = (Furgoneta) aux;
+                MotorFurgoneta x = (MotorFurgoneta) aux;
                 x.meterCajaAguacates();
             }
             // Esto lo hace cada vez con cada objeto de la lista
