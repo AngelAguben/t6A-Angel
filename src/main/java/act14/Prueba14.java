@@ -57,12 +57,12 @@ public class Prueba14 {
         frigos.add(new Frigorifico(800, 300, "Samsung"));
         frigos.add(new Frigorifico(700, 300, "Balay"));
         System.out.println("------");
-        
+
         for (Frigorifico frigo : frigos) {
             System.out.println(frigo.toString());
         }
         System.out.println("---ORDENADA---");
-        
+
         //  En una lista nueva de tres frigoríficos con los valores que tú 
         // quieras, ordena los elementos por su capacidad en litros.
         Collections.sort(frigos);
