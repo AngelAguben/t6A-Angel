@@ -3,14 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package act13;
+package act14;
 
 /**
  *
- * @author angel
+ * @author Ángel
  */
-public interface Identificable {
+public interface MuestraInformacion {
 
-    // No hace falta poner public
-    void identificate();
+    public void muestra();
 }

@@ -9,7 +9,10 @@ package act13;
  *
  * @author angel
  */
-public abstract class Persona implements Identificable{
+public abstract class Persona implements Identificable {
+    // Ponemos el implements en persona y luego en las clases hijas podremos 
+    // implementarle código
+
     private String nombre;
     private String apellidos;
     private String NIF;
@@ -59,13 +62,4 @@ public abstract class Persona implements Identificable{
         return "Persona{" + "nombre=" + nombre + ", apellidos=" + apellidos + ", NIF=" + NIF + ", direccion=" + direccion + '}';
     }
 
-//    @Override
-//    public void identificate() {
-//        for (Persona perso : col) {
-//            
-//        }
-//    }
-    
-    
-    
 }
